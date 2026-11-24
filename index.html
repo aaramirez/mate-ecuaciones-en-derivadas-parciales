@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ecuaciones en derivadas parciales</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Las ecuaciones del calor, de ondas y de Laplace: su deducción, la separación de variables, las series de Fourier con su teorema de convergencia, el método de características, las funciones armónicas, Sturm-Liouville, las funciones de Green y las transformadas integrales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Ecuaciones en derivadas <b>parciales</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>El calor se difunde, las ondas viajan y el equilibrio promedia: tres ecuaciones que lo explican casi todo</h1>
+  <p class="lede">Una barra que se enfría, una cuerda de guitarra y una placa en equilibrio térmico obedecen tres ecuaciones distintas, y cada una tiene su carácter: el calor suaviza, la onda transporta y Laplace promedia. Este curso las deduce de la física, las resuelve con series de Fourier y con características, y demuestra lo que garantiza que la solución sea la correcta. En cada capítulo hay una simulación donde la ecuación evoluciona a la vista.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 13 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para quien ya hizo Ecuaciones diferenciales ordinarias (las lineales de segundo orden, Frobenius y las funciones de Bessel, la transformada de Laplace) y Cálculo en varias variables (derivadas parciales, gradiente, divergencia y los teoremas de Green, Gauss y Stokes).</p>
+    <p><b>Cómo está hecho.</b> Tres ecuaciones recorren el curso: la del calor en una barra, la de ondas en una cuerda y la de Laplace en una placa. Cada técnica se estrena en una de ellas y luego se lleva a las otras y a más dimensiones (membranas, cilindros, esferas). Los laboratorios dejan cambiar la condición inicial y de borde y mirar la solución moverse, sumar términos de una serie de Fourier o seguir una característica. Las prácticas usan Python con NumPy y SciPy para sumar series, resolver numéricamente y comparar con la solución exacta. Es parte del recorrido de Ecuaciones en Derivadas Parciales, Matemática IV, Matemáticas Generales IV y Métodos Matemáticos de la Física I.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Las ecuaciones y su origen</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-una-edp"><span class="n">01</span><b>Qué es una ecuación en derivadas parciales</b><p>Orden, linealidad, superposición, tipos de condiciones de frontera y la clasificación en elípticas, parabólicas e hiperbólicas.</p></div>
+    <div class="mod soon" data-id="calor-y-laplace"><span class="n">02</span><b>Las ecuaciones del calor y de Laplace</b><p>La deducción de la ecuación del calor a partir de la conservación de la energía y el equilibrio que da la ecuación de Laplace.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Fourier y la separación de variables</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="separacion-de-variables"><span class="n">03</span><b>El método de separación de variables</b><p>Resolver la ecuación del calor en una barra con distintos bordes, y ver por qué aparecen senos, cosenos o ambos.</p></div>
+    <div class="mod soon" data-id="series-de-fourier"><span class="n">04</span><b>Series de Fourier y su convergencia</b><p>Coeficientes, extensiones par e impar, el teorema de convergencia demostrado y cuándo se puede derivar término a término.</p></div>
+    <div class="mod soon" data-id="laplace-en-el-plano"><span class="n">05</span><b>La ecuación de Laplace en el rectángulo y en el disco</b><p>Separación de variables en coordenadas cartesianas y polares, y la fórmula de Poisson.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Ondas</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="cuerda-vibrante"><span class="n">06</span><b>La ecuación de ondas y la cuerda vibrante</b><p>Deducir la ecuación de la cuerda, resolverla por separación de variables y escuchar sus modos normales.</p></div>
+    <div class="mod soon" data-id="dalembert-y-caracteristicas"><span class="n">07</span><b>La solución de D'Alembert y el método de características</b><p>Ondas que viajan hacia los dos lados, el dominio de dependencia y las reflexiones en un extremo.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Más dimensiones y autofunciones</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="funciones-armonicas"><span class="n">08</span><b>Propiedades de las funciones armónicas</b><p>Las fórmulas de Green, el valor medio y el principio del máximo, con unicidad y estabilidad del problema de Dirichlet.</p></div>
+    <div class="mod soon" data-id="tres-o-mas-variables"><span class="n">09</span><b>Membranas, cilindros y coordenadas separables</b><p>Separar variables en dos y tres dimensiones espaciales: membranas rectangulares y circulares y el cilindro.</p></div>
+    <div class="mod soon" data-id="sturm-liouville"><span class="n">10</span><b>Condiciones de frontera, autofunciones y el problema de Sturm-Liouville</b><p>La teoría que explica por qué los senos, los Bessel y los Legendre son ortogonales y sirven como base.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Fuentes, Green y transformadas</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="problemas-no-homogeneos"><span class="n">11</span><b>Problemas no homogéneos</b><p>Fuentes de calor y bordes que cambian con el tiempo, y el desarrollo en autofunciones.</p></div>
+    <div class="mod soon" data-id="funcion-de-green"><span class="n">12</span><b>La función de Green</b><p>La respuesta a una fuente puntual, y cómo con ella se resuelven todas las demás.</p></div>
+    <div class="mod soon" data-id="transformadas-integrales"><span class="n">13</span><b>Transformadas integrales y dominios infinitos</b><p>La transformada de Fourier para la barra infinita, el núcleo del calor y la transformada de Laplace en el tiempo.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-ecuaciones-en-derivadas-parciales" target="_blank" rel="noopener">github.com/aaramirez/mate-ecuaciones-en-derivadas-parciales</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
